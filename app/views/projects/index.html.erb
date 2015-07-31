@@ -1,0 +1,9 @@
+<h1>Hie</h1> 
+<% if @projects.present? %>
+<% @projects.each do |project| %>
+	<%= project.id %>
+	<%= project.created_at %><br />
+<% end %>
+<% else %>
+<h3>No data to display </h3>
+<% end %>
